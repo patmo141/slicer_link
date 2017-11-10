@@ -5,7 +5,11 @@ from xml.dom import minidom
 from xml.etree.ElementTree import Element, SubElement, Comment, ElementTree
 from xml.etree import ElementTree as ET
 
-#
+
+#http://codeprogress.com/python/libraries/pyqt/showPyQTExample.php?index=419&key=QFileSystemWatcherDirChange&version=4
+#http://codereview.stackexchange.com/questions/104555/directory-watcher-and-notifier-for-files-added-or-removed
+
+
 # HelloPython
 #
 def prettify(elem):
@@ -118,7 +122,7 @@ class BlenderLinkWidget:
                     
                     disp_node = slicer_model.GetDisplayNode()
                     disp_node.SetSliceIntersectionVisibility(True)
-                    disp_node.SetSliceIntersectionThickness(3)
+                    disp_node.SetSliceIntersectionThickness(2)
                     
                     mat = b_ob.find('material')
                     if mat is not None: 
